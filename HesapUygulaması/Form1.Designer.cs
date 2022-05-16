@@ -31,6 +31,8 @@ namespace HesapUygulaması
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HesapUygulaması));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,10 +42,12 @@ namespace HesapUygulaması
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.kusburnuTxt = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.menemenTxt = new System.Windows.Forms.TextBox();
+            this.tostTxt = new System.Windows.Forms.TextBox();
+            this.oraletTxt = new System.Windows.Forms.TextBox();
+            this.cayTxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,6 +61,7 @@ namespace HesapUygulaması
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,6 +73,8 @@ namespace HesapUygulaması
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -78,16 +85,36 @@ namespace HesapUygulaması
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(50, 90);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(340, 470);
+            this.groupBox1.Size = new System.Drawing.Size(340, 602);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MENÜ";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(6, 257);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(120, 89);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(132, 296);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(193, 26);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "KUŞBURNU : 2 TL";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(140, 408);
+            this.label5.Location = new System.Drawing.Point(134, 528);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(194, 26);
             this.label5.TabIndex = 10;
@@ -97,7 +124,7 @@ namespace HesapUygulaması
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(134, 287);
+            this.label4.Location = new System.Drawing.Point(128, 407);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 26);
             this.label4.TabIndex = 9;
@@ -116,7 +143,7 @@ namespace HesapUygulaması
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 375);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 495);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(120, 89);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +153,7 @@ namespace HesapUygulaması
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(6, 257);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 377);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 89);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,55 +193,73 @@ namespace HesapUygulaması
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.kusburnuTxt);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.menemenTxt);
+            this.groupBox2.Controls.Add(this.tostTxt);
+            this.groupBox2.Controls.Add(this.oraletTxt);
+            this.groupBox2.Controls.Add(this.cayTxt);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(422, 90);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(309, 464);
+            this.groupBox2.Size = new System.Drawing.Size(309, 602);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ADET";
-
             // 
-            // textBox4
+            // kusburnuTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(157, 252);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(90, 32);
-            this.textBox4.TabIndex = 15;
+            this.kusburnuTxt.Location = new System.Drawing.Point(157, 182);
+            this.kusburnuTxt.Name = "kusburnuTxt";
+            this.kusburnuTxt.Size = new System.Drawing.Size(90, 32);
+            this.kusburnuTxt.TabIndex = 17;
             // 
-            // textBox3
+            // label14
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(90, 32);
-            this.textBox3.TabIndex = 14;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(8, 184);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(143, 26);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "KUŞBURNU :";
             // 
-            // textBox2
+            // menemenTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 32);
-            this.textBox2.TabIndex = 13;
+            this.menemenTxt.Location = new System.Drawing.Point(157, 307);
+            this.menemenTxt.Name = "menemenTxt";
+            this.menemenTxt.Size = new System.Drawing.Size(90, 32);
+            this.menemenTxt.TabIndex = 15;
             // 
-            // textBox1
+            // tostTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 32);
-            this.textBox1.TabIndex = 12;
+            this.tostTxt.Location = new System.Drawing.Point(157, 237);
+            this.tostTxt.Name = "tostTxt";
+            this.tostTxt.Size = new System.Drawing.Size(90, 32);
+            this.tostTxt.TabIndex = 14;
+            // 
+            // oraletTxt
+            // 
+            this.oraletTxt.Location = new System.Drawing.Point(157, 123);
+            this.oraletTxt.Name = "oraletTxt";
+            this.oraletTxt.Size = new System.Drawing.Size(90, 32);
+            this.oraletTxt.TabIndex = 13;
+            // 
+            // cayTxt
+            // 
+            this.cayTxt.Location = new System.Drawing.Point(157, 63);
+            this.cayTxt.Name = "cayTxt";
+            this.cayTxt.Size = new System.Drawing.Size(90, 32);
+            this.cayTxt.TabIndex = 12;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(6, 257);
+            this.label9.Location = new System.Drawing.Point(6, 312);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 27);
             this.label9.TabIndex = 11;
@@ -224,7 +269,7 @@ namespace HesapUygulaması
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(69, 184);
+            this.label8.Location = new System.Drawing.Point(69, 239);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 26);
             this.label8.TabIndex = 10;
@@ -261,7 +306,7 @@ namespace HesapUygulaması
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Location = new System.Drawing.Point(776, 90);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(317, 464);
+            this.groupBox3.Size = new System.Drawing.Size(317, 602);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "HESAP";
@@ -338,7 +383,7 @@ namespace HesapUygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1183, 586);
+            this.ClientSize = new System.Drawing.Size(1183, 736);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -352,6 +397,7 @@ namespace HesapUygulaması
             this.Load += new System.EventHandler(this.HesapUygulaması_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -383,16 +429,20 @@ namespace HesapUygulaması
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox menemenTxt;
+        private System.Windows.Forms.TextBox tostTxt;
+        private System.Windows.Forms.TextBox oraletTxt;
+        private System.Windows.Forms.TextBox cayTxt;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnTemizle;
         private System.Windows.Forms.Button btnHesap;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox kusburnuTxt;
+        private System.Windows.Forms.Label label14;
     }
 }
 
